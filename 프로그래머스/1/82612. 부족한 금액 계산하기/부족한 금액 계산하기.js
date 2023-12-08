@@ -7,9 +7,6 @@ function solution(price, money, count) {
   }
 
   // 남은 금액 구하기
-  const restMoney = money - cost;
-  if (restMoney <= 0) {
-    return Math.abs(restMoney);
-  }
-  return 0;
+
+  return cost > money ? cost - money : 0;
 }
